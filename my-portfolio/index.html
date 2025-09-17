@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[YOUR NAME] - About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">[YOUR NAME]</div>
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#about" class="active">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <div class="image-placeholder">[Y]</div>
+                        <div class="floating-elements">
+                            <span class="float-emoji">✨</span>
+                            <span class="float-emoji">🎨</span>
+                            <span class="float-emoji">💻</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <h1 class="hero-title">
+                    <span class="hello-text">HELLO,</span>
+                    <span class="name-text">I'M [YOUR NAME]</span>
+                </h1>
+                <p class="hero-subtitle">[Your Role/Title] • [Your Location] • [Your Passion]</p>
+                <div class="hero-description">
+                    <p>I'm a [your age]-year-old [your role] passionate about [your main interest]. 
+                       Currently [what you're doing now], I love creating [what you create] and 
+                       exploring [what you explore].</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('about')">Learn More</button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>ABOUT ME</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="about-grid">
+            <!-- Personal Info Card -->
+            <div class="info-card" data-tilt>
+                <div class="card-header">
+                    <h3>Quick Facts</h3>
+                    <span class="card-number">01</span>
+                </div>
+                <div class="fact-list">
+                    <div class="fact-item">
+                        <span class="fact-icon">🎂</span>
+                        <span class="fact-text">Birthday: [Your Birthday]</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-icon">📍</span>
+                        <span class="fact-text">Location: [Your City]</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-icon">🎓</span>
+                        <span class="fact-text">School: [Your School]</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-icon">☕</span>
+                        <span class="fact-text">Fuel: [Coffee/Tea/etc]</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-icon">🎵</span>
+                        <span class="fact-text">Currently Playing: [Song/Artist]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Card -->
+            <div class="story-card" data-tilt>
+                <div class="card-header">
+                    <h3>My Story</h3>
+                    <span class="card-number">02</span>
+                </div>
+                <div class="story-content">
+                    <p>I discovered my passion for [your interest] when I was [age/situation]. 
+                       What started as [how it began] has grown into [what it became]. 
+                       I love the challenge of [what you find challenging] and the satisfaction 
+                       of [what gives you satisfaction].</p>
+                    
+                    <p>When I'm not [main activity], you'll find me [other activities]. 
+                       I believe that [your philosophy/belief], and I'm always excited to 
+                       [what excites you].</p>
+                </div>
+            </div>
+
+            <!-- Skills/Interests Collage -->
+            <div class="collage-card">
+                <div class="card-header">
+                    <h3>Things I Love</h3>
+                    <span class="card-number">03</span>
+                </div>
+                <div class="interests-collage">
+                    <div class="interest-item large" data-interest="[Main Interest]">
+                        <span class="interest-icon">💻</span>
+                        <span class="interest-label">[Main Interest]</span>
+                    </div>
+                    <div class="interest-item" data-interest="[Interest 2]">
+                        <span class="interest-icon">🎨</span>
+                        <span class="interest-label">[Interest 2]</span>
+                    </div>
+                    <div class="interest-item" data-interest="[Interest 3]">
+                        <span class="interest-icon">📚</span>
+                        <span class="interest-label">[Interest 3]</span>
+                    </div>
+                    <div class="interest-item" data-interest="[Interest 4]">
+                        <span class="interest-icon">🎵</span>
+                        <span class="interest-label">[Interest 4]</span>
+                    </div>
+                    <div class="interest-item" data-interest="[Interest 5]">
+                        <span class="interest-icon">🏃</span>
+                        <span class="interest-label">[Interest 5]</span>
+                    </div>
+                    <div class="interest-item" data-interest="[Interest 6]">
+                        <span class="interest-icon">🎮</span>
+                        <span class="interest-label">[Interest 6]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="goals-section">
+        <div class="section-header">
+            <h2>WHAT'S NEXT</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-number">2025</div>
+                <div class="timeline-content">
+                    <h3>This Year</h3>
+                    <ul>
+                        <li>[Goal 1]</li>
+                        <li>[Goal 2]</li>
+                        <li>[Goal 3]</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-number">2026</div>
+                <div class="timeline-content">
+                    <h3>Next Year</h3>
+                    <ul>
+                        <li>[Goal 1]</li>
+                        <li>[Goal 2]</li>
+                        <li>[Goal 3]</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-number">∞</div>
+                <div class="timeline-content">
+                    <h3>Future Dreams</h3>
+                    <ul>
+                        <li>[Dream 1]</li>
+                        <li>[Dream 2]</li>
+                        <li>[Dream 3]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2>LET'S CONNECT</h2>
+            <p>Always excited to meet new people and collaborate on interesting projects!</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:[your-email]" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">[your-email]</div>
+                </a>
+                
+                <a href="[your-instagram]" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-label">Instagram</div>
+                    <div class="contact-value">@[your-handle]</div>
+                </a>
+                
+                <a href="[your-github]" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <div class="contact-label">GitHub</div>
+                    <div class="contact-value">@[your-username]</div>
+                </a>
+            </div>
+            
+            <div class="current-status">
+                <h3>Current Status:</h3>
+                <div class="status-items">
+                    <div class="status-item">🎯 Working on: [Current Project]</div>
+                    <div class="status-item">📚 Learning: [What You're Learning]</div>
+                    <div class="status-item">🎵 Listening to: [Current Music]</div>
+                    <div class="status-item">☕ Powered by: [Your Fuel]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 [YOUR NAME]. Made with ❤️ and [your favorite thing]</p>
+        <p class="footer-note">This site is a constant work in progress - just like me! ✨</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Interest cards hover effect
+        document.querySelectorAll('.interest-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                const interest = this.getAttribute('data-interest');
+                this.style.transform = 'scale(1.1) rotate(' + (Math.random() * 10 - 5) + 'deg)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+
+        // Floating animation for hero elements
+        document.querySelectorAll('.float-emoji').forEach((emoji, index) => {
+            emoji.style.animationDelay = `${index * 0.5}s`;
+        });
+
+        // Simple card tilt effect
+        document.querySelectorAll('[data-tilt]').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+            });
+        });
+    </script>
+</body>
+</html>
